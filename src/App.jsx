@@ -51,7 +51,7 @@ function App() {
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
         <input
           type="text"
-          placeholder="Passe"
+          placeholder="Mot de passe"
           value={valor}
           onChange={(e) => {
             setValor(e.target.value)
