@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import welcome from './assets/welcome.jpeg'
-import noseAtNoise from './assets/noseAtNoise.jpeg'
+import noseAtNoise from './assets/noseAtNoise.png'
 
 import './App.css'
 
@@ -35,62 +35,32 @@ function App() {
   };
 
   return (
-    <div style={{
-      backgroundColor: 'white',
-      height: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: '12px',
-      width: '100vh',
-      margin: '0',
-    }}>
-      <img src={welcome} alt="Welcome" style={{ width: '1000px', height: 'auto' }} />
-      Tu as ton mot de passe ?
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px' }}>
-        <input
-          type="text"
-          placeholder="Mot de passe"
-          value={valor}
-          onChange={(e) => {
-            setValor(e.target.value)
-            setError(false)
-          }}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter') handleSubmit();
-          }}
-          style={{
-            padding: '10px',
-            fontSize: '16px',
-            borderRadius: '6px',
-            border: error ? '1px solid red' : '1px solid black',
-            backgroundColor: 'white',
-            color: 'black',
-            outline: 'none'
-          }}
-        />
-        {error && (
-          <p style={{ color: 'red', fontSize: '13px', margin: '0' }}>
-            Le mot de passe n'est pas valide
-          </p>
-        )}
-      </div>
-      <button
-        onClick={handleSubmit}
-        style={{
-          padding: '10px 24px',
-          fontSize: '16px',
-          borderRadius: '6px',
-          backgroundColor: 'black',
-          color: 'white',
-          cursor: 'pointer'
-        }}
-      >
-        Envoyer
-      </button>
-      <img src={noseAtNoise} alt="NoseAtNoise" style={{ width: '270px', height: 'auto' }} />
-    </div>
+    <div className="container">
+  <img src={welcome} alt="Welcome" className="img-welcome" />
+  Tu as ton mot de passe ?
+  <div className="input-wrapper">
+    <input
+      type="text"
+      placeholder="Mot de passe"
+      value={valor}
+      onChange={(e) => {
+        setValor(e.target.value)
+        setError(false)
+      }}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter') handleSubmit();
+      }}
+      className={`input ${error ? 'input-error' : ''}`}
+    />
+    {error && (
+      <p className="error-msg">Le mot de passe n'est pas valide</p>
+    )}
+  </div>
+  <button onClick={handleSubmit} className="btn">
+    Envoyer
+  </button>
+  <img src={noseAtNoise} alt="NoseAtNoise" className="img-logo" />
+</div>
   )
 }
 
