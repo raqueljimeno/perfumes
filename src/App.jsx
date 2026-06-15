@@ -4,13 +4,13 @@ import noseAtNoise from './assets/noseAtNoise.png'
 
 import './App.css'
 
-const nombres = ["Pétale Somnambule", "Pétale Silencieux", "Pétale Fragile", "Pétale Doré",
+const nombres = ["Pétale Silencieux", "Pétale Fragile", "Pétale Doré",
 "Pétale Sombre", "Pétale Sauvage", "Pétale Lent", "Pétale Brisé", "Pétale Secret",
 "Pétale Humide", "Pétale Égaré", "Pétale Froid", "Pétale Minuscule", "Pétale Immobile",
 "Pétale Gris", "Pétale Rieur", "Pétale Fané", "Pétale Nocturne", "Pétale Léger",
 "Pétale Obscur", "Pétale Muet", "Pétale Ancien", "Pétale Flottant", "Pétale Invisible",
 "Pétale Bleu", "Pétale Pâle", "Pétale Solitaire", "Pétale Velours", "Pétale Trouble",
-"Pétale Vivant", "d'Arbre", "Larme d'Arbre", "Branche d'Arbre", "Ombre d'Arbre",
+"Pétale Vivant", "d'Arbre", "Branche d'Arbre", "Ombre d'Arbre",
 "Souffle d'Arbre", "Écorce d'Arbre", "Mémoire d'Arbre", "Silence d'Arbre", "Cendre d'Arbre",
 "Veine d'Arbre", "Sève d'Arbre", "Nuit d'Arbre", "Racine d'Arbre", "Poussière d'Arbre",
 "Murmure d'Arbre", "Reflet d'Arbre", "Peau d'Arbre", "Épine d'Arbre", "Brume d'Arbre",
